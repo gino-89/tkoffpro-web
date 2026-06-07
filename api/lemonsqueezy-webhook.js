@@ -88,7 +88,7 @@ async function sendOnboardingEmail(email, name, tempPassword) {
       </table>
 
       <p style="color: #dc3545; font-size: 13px; font-weight: bold; margin-bottom: 25px;">
-        * Por seguridad, te recomendamos cambiar tu contraseña temporal desde los ajustes de la app una vez inicies sesión.
+        * Por seguridad, te recomendamos cambiar tu contraseña temporal haciendo clic en "¿Olvidaste tu contraseña?" en la pantalla de inicio de sesión de la aplicación.
       </p>
 
       <div style="text-align: center; margin-bottom: 25px;">
@@ -114,7 +114,7 @@ Gracias por tu compra. Hemos creado tu cuenta de acceso para TkOff Pro. Ya puede
 Email: ${email}
 Contraseña temporal: ${tempPassword}
 
-* Te recomendamos cambiar tu contraseña temporal desde los ajustes de la app.
+* Te recomendamos cambiar tu contraseña temporal haciendo clic en "¿Olvidaste tu contraseña?" en la pantalla de inicio de la app.
 
 Puedes descargar la aplicación en: https://tkoffpro.com/download
 
