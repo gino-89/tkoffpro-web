@@ -1,362 +1,477 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TkOff Pro — Professional Construction Takeoff & Estimating Software</title>
-  <meta name="description" content="Powerful enough for professionals, simple enough to master in minutes. Get the exact measurement tools you need without the bloated features.">
+  <meta name="description"
+    content="Powerful enough for professionals, simple enough to master in minutes. Get the exact measurement tools you need without the bloated features.">
   <meta property="og:title" content="TkOff Pro — Construction Takeoff Made Simple">
-  <meta property="og:description" content="Powerful enough for professionals, simple enough to master in minutes. Get the exact measurement tools you need without the bloated features.">
+  <meta property="og:description"
+    content="Powerful enough for professionals, simple enough to master in minutes. Get the exact measurement tools you need without the bloated features.">
   <meta property="og:image" content="logo.png">
   <link rel="icon" href="logo.png">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<!-- ========== NAVBAR ========== -->
-<nav class="navbar" id="navbar">
-  <div class="container">
-    <a href="#" class="nav-logo">
-      <img src="logo.png" alt="TkOff Pro Logo">
-      <span>TkOff <span class="pro">Pro</span></span>
-    </a>
-    <ul class="nav-links" id="nav-links">
-      <li><a href="#features">Features</a></li>
-      <li><a href="#how-it-works">How It Works</a></li>
-      <li><a href="#tools">Tools</a></li>
-      <li><a href="#estimating">Estimating</a></li>
-      <li><a href="#pricing">Pricing</a></li>
-      <li><a href="#download">Download</a></li>
-      <li style="margin-left: 20px; font-weight: 700; display: flex; gap: 8px;">
-        <a href="index.html" style="color: var(--orange);">EN</a> 
-        <span style="color: var(--text-muted);">|</span> 
-        <a href="index-es.html">ES</a>
-      </li>
-    </ul>
-    <a href="#pricing" class="nav-cta">Try Free</a>
-    <button class="hamburger" id="hamburger" aria-label="Toggle navigation">☰</button>
-  </div>
-</nav>
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#" class="nav-logo">
+        <img src="logo.png" alt="TkOff Pro Logo">
+        <span>TkOff <span class="pro">Pro</span></span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#tools">Tools</a></li>
+        <li><a href="#estimating">Estimating</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#download">Download</a></li>
+        <li style="margin-left: 20px; font-weight: 700; display: flex; gap: 8px;">
+          <a href="index.html" style="color: var(--orange);">EN</a>
+          <span style="color: var(--text-muted);">|</span>
+          <a href="index-es.html">ES</a>
+        </li>
+      </ul>
+      <a href="#pricing" class="nav-cta">Try Free</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation">☰</button>
+    </div>
+  </nav>
 
-<!-- ========== HERO ========== -->
-<section class="hero" id="hero">
-  <div class="hero-bg"><canvas id="hero-canvas"></canvas></div>
-  <div class="container">
-    <div class="hero-content">
-      <div class="hero-badge"><span class="dot"></span> v1.3.0 — 15-day Free Trial</div>
-      <h1>Construction Takeoff<br><span class="gradient-text">Made Simple.</span></h1>
-      <p>Powerful enough for professionals, simple enough to master in minutes. Get the exact measurement tools you need without the bloated features you don't.</p>
-      <div class="hero-buttons">
-        <a href="#" class="btn-primary">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg"><canvas id="hero-canvas"></canvas></div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge"><span class="dot"></span> v1.3.0 — 15-day Free Trial</div>
+        <h1>Construction Takeoff<br><span class="gradient-text">Made Simple.</span></h1>
+        <p>Powerful enough for professionals, simple enough to master in minutes. Get the exact measurement tools you
+          need without the bloated features you don't.</p>
+        <div class="hero-buttons">
+          <a href="#" class="btn-primary">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 5v14M5 12l7 7 7-7" />
+            </svg>
+            Download for Windows
+          </a>
+          <a href="#" class="btn-secondary">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 5v14M5 12l7 7 7-7" />
+            </svg>
+            Download for Mac
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-visual perspective-container">
+        <div class="hero-glow"></div>
+
+        <div class="sci-fi-wrapper">
+          <img src="hero-3d.png" alt="TkOff Pro — Main Interface" class="hero-mockup-img">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FEATURES ========== -->
+  <section id="features">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label"><span class="line"></span> Features</div>
+        <h2 class="section-title">Everything You Need for Professional Takeoffs</h2>
+        <p class="section-subtitle">Powerful tools designed for architects, contractors, and estimators.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card reveal">
+          <div class="feature-icon">📄</div>
+          <h3>PDF Blueprint Viewer</h3>
+          <p>Open multi-page architectural plans with smooth zoom and instant page navigation.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon">📐</div>
+          <h3>5 Precision Measurement Tools</h3>
+          <p>Lines, polygons, paths, counting, and tape measure — draw directly on your blueprints.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon">📏</div>
+          <h3>Professional Scale System</h3>
+          <p>Architectural, engineering, and metric scales with manual calibration support.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon">🗂️</div>
+          <h3>Layer Management</h3>
+          <p>Organize measurements by layer with custom colors, opacity, wall height, and sub-layers.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon">💰</div>
+          <h3>Real-Time Estimating</h3>
+          <p>Live cost table with built-in math calculator in prices and automatic grand total.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon">📊</div>
+          <h3>Professional Excel Export</h3>
+          <p>Hierarchical report with currency formatting, subtotals, and Grand Total in one click.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== MASTER LIBRARY ========== -->
+  <section id="master-library"
+    style="background: rgba(255,255,255,0.02); border-top: 1px solid rgba(255,255,255,0.05); border-bottom: 1px solid rgba(255,255,255,0.05);">
+    <div class="container" style="display: flex; align-items: center; gap: 60px; flex-wrap: wrap;">
+      <div style="flex: 1; min-width: 300px;" class="reveal">
+        <div class="section-label">
+          <div class="line"></div> Master Library
+        </div>
+        <h2 class="section-title">Your Standard Costs, Always Ready</h2>
+        <p class="section-subtitle" style="margin-bottom: 30px;">
+          Stop re-typing the same materials and labor rates over and over. The Master Library allows you to build a
+          comprehensive database of your standard items to dramatically speed up your estimating process.
+        </p>
+
+        <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 16px;">
+          <li style="display: flex; align-items: flex-start; gap: 12px;">
+            <div
+              style="color: var(--orange); font-size: 1.2rem; background: rgba(253,108,0,0.1); width: 28px; height: 28px; border-radius: 50%; display: flex; justify-content: center; align-items: center; flex-shrink: 0;">
+              ✓</div>
+            <span style="color: #e0e0e0; line-height: 1.5;"><strong>Pre-configure Everything:</strong> Save item
+              descriptions, units, and unit prices permanently.</span>
+          </li>
+          <li style="display: flex; align-items: flex-start; gap: 12px;">
+            <div
+              style="color: var(--orange); font-size: 1.2rem; background: rgba(253,108,0,0.1); width: 28px; height: 28px; border-radius: 50%; display: flex; justify-content: center; align-items: center; flex-shrink: 0;">
+              ✓</div>
+            <span style="color: #e0e0e0; line-height: 1.5;"><strong>Export & Collaborate:</strong> Seamlessly share your
+              custom library with coworkers or across multiple computers to keep your entire team on the same
+              track.</span>
+          </li>
+          <li style="display: flex; align-items: flex-start; gap: 12px;">
+            <div
+              style="color: var(--orange); font-size: 1.2rem; background: rgba(253,108,0,0.1); width: 28px; height: 28px; border-radius: 50%; display: flex; justify-content: center; align-items: center; flex-shrink: 0;">
+              ✓</div>
+            <span style="color: #e0e0e0; line-height: 1.5;"><strong>Zero Data Entry Errors:</strong> Streamline your
+              workflow and ensure pricing consistency across all your bids.</span>
+          </li>
+        </ul>
+      </div>
+
+      <div
+        style="flex: 1.2; min-width: 400px; border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 30px 60px rgba(0,0,0,0.5), 0 0 30px rgba(0, 52, 111, 0.4);"
+        class="reveal">
+        <img src="screenshot-library.png" alt="TkOff Pro Master Library"
+          style="width: 100%; display: block; transition: transform 0.5s ease;"
+          onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== HOW IT WORKS ========== -->
+  <section id="how-it-works">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label"><span class="line"></span> How It Works</div>
+        <h2 class="section-title">From Blueprint to Budget in 3 Steps</h2>
+        <p class="section-subtitle">Simple, fast, and professional workflow.</p>
+      </div>
+      <div class="steps-row">
+        <div class="step reveal">
+          <div class="step-number">1</div>
+          <h3>Open Your PDF</h3>
+          <p>Import any architectural blueprint with multi-page support and instant rendering.</p>
+          <div class="step-connector"></div>
+        </div>
+        <div class="step reveal">
+          <div class="step-number">2</div>
+          <h3>Measure with Precision</h3>
+          <p>Draw areas, lines, paths, and counts directly on the plan with professional scales.</p>
+          <div class="step-connector"></div>
+        </div>
+        <div class="step reveal">
+          <div class="step-number">3</div>
+          <h3>Export Your Estimate</h3>
+          <p>Generate a professional Excel report with costs, subtotals, and Grand Total in one click.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TOOLS SHOWCASE ========== -->
+  <section id="tools">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label"><span class="line"></span> Tools</div>
+        <h2 class="section-title">Keyboard-First Workflow</h2>
+        <p class="section-subtitle">Every tool at your fingertips with a single keystroke.</p>
+      </div>
+      <div class="tools-row reveal">
+        <div class="tool-chip"><span class="tool-icon">🔘</span><span class="tool-name">Select</span><kbd>Q</kbd></div>
+        <div class="tool-chip"><span class="tool-icon">✏️</span><span class="tool-name">Line</span><kbd>L</kbd></div>
+        <div class="tool-chip"><span class="tool-icon">🔗</span><span class="tool-name">Path</span><kbd>P</kbd></div>
+        <div class="tool-chip"><span class="tool-icon">⬡</span><span class="tool-name">Area</span><kbd>A</kbd></div>
+        <div class="tool-chip"><span class="tool-icon">🔢</span><span class="tool-name">Count</span><kbd>C</kbd></div>
+        <div class="tool-chip"><span class="tool-icon">📐</span><span class="tool-name">Scale</span><kbd>S</kbd></div>
+        <div class="tool-chip"><span class="tool-icon">📏</span><span class="tool-name">Tape</span><kbd>T</kbd></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ESTIMATING ========== -->
+  <section id="estimating">
+    <div class="container">
+      <div class="estimating-wrap reveal">
+        <div class="estimating-text">
+          <div class="section-label"><span class="line"></span> Estimating</div>
+          <h3>From Measurement to<br>Budget in Seconds</h3>
+          <p>The built-in Estimating module groups all your measurements by page and layer, lets you assign unit prices
+            with a math calculator, and shows a live Grand Total — ready to export.</p>
+          <a href="#download" class="btn-primary" style="margin-top:8px;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 5v14M5 12l7 7 7-7" />
+            </svg>
+            Try It Free
+          </a>
+        </div>
+        <div class="estimating-table-wrap">
+          <table class="est-table">
+            <thead>
+              <tr>
+                <th>Description</th>
+                <th>Wall Ht</th>
+                <th>Qty</th>
+                <th>Unit</th>
+                <th>Unit Price</th>
+                <th>Total Cost</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="page-row">
+                <td colspan="6">📄 A1.01 — First Floor Plan</td>
+              </tr>
+              <tr>
+                <td>Exterior Walls</td>
+                <td>10'</td>
+                <td>245.6</td>
+                <td>LF</td>
+                <td>$12.50</td>
+                <td>$3,070.00</td>
+              </tr>
+              <tr class="sub-row">
+                <td>└ Insulation R-19</td>
+                <td>—</td>
+                <td>2,456</td>
+                <td>SF</td>
+                <td>$1.80</td>
+                <td>$4,420.80</td>
+              </tr>
+              <tr>
+                <td>Floor Area - Main</td>
+                <td>—</td>
+                <td>1,850</td>
+                <td>SF</td>
+                <td>$6.75</td>
+                <td>$12,487.50</td>
+              </tr>
+              <tr>
+                <td>Doors</td>
+                <td>—</td>
+                <td>14</td>
+                <td>EA</td>
+                <td>$385.00</td>
+                <td>$5,390.00</td>
+              </tr>
+              <tr class="page-row">
+                <td colspan="6">📄 A2.01 — Second Floor Plan</td>
+              </tr>
+              <tr>
+                <td>Interior Partitions</td>
+                <td>8'</td>
+                <td>186.2</td>
+                <td>LF</td>
+                <td>$8.25</td>
+                <td>$1,536.15</td>
+              </tr>
+              <tr>
+                <td>Ceiling Area</td>
+                <td>—</td>
+                <td>1,420</td>
+                <td>SF</td>
+                <td>$3.50</td>
+                <td>$4,970.00</td>
+              </tr>
+              <tr class="grand-row">
+                <td colspan="5">Grand Total</td>
+                <td>$31,874.45</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PRICING ========== -->
+  <section id="pricing"
+    style="background: radial-gradient(circle at bottom, rgba(0,52,111,0.08) 0%, rgba(15,23,42,0) 70%); border-top: 1px solid rgba(255,255,255,0.05); padding: 80px 0;">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label"><span class="line"></span> Pricing</div>
+        <h2 class="section-title">Simple, Transparent Pricing</h2>
+        <p class="section-subtitle">Start your 15-day free trial today. Cancel anytime.</p>
+      </div>
+
+      <div style="display: flex; justify-content: center; margin-top: 40px;" class="reveal">
+        <div
+          style="background: rgba(30, 41, 59, 0.5); backdrop-filter: blur(10px); border: 1.5px solid #fd6c00; border-radius: 20px; padding: 40px; width: 100%; max-width: 420px; box-shadow: 0 20px 50px rgba(0,0,0,0.3), 0 0 30px rgba(253,108,0,0.15); position: relative; text-align: center;">
+          <div
+            style="position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background: var(--orange); color: white; padding: 6px 16px; border-radius: 20px; font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; box-shadow: 0 4px 10px rgba(253,108,0,0.4);">
+            15-Day Free Trial
+          </div>
+
+          <h3
+            style="font-family: 'Outfit', sans-serif; font-size: 24px; font-weight: 700; margin: 10px 0 0 0; color: white;">
+            Monthly Plan</h3>
+          <p style="color: #94a3b8; font-size: 14px; margin: 5px 0 25px 0;">Full access, no restrictions</p>
+
+          <div style="display: flex; align-items: baseline; justify-content: center; gap: 4px; margin-bottom: 25px;">
+            <span
+              style="font-family: 'Outfit', sans-serif; font-size: 56px; font-weight: 800; color: white; line-height: 1;">$20</span>
+            <span style="color: #94a3b8; font-size: 16px; font-weight: 500;">/ month</span>
+          </div>
+
+          <ul
+            style="list-style: none; padding: 0; margin: 0 0 35px 0; text-align: left; display: flex; flex-direction: column; gap: 14px; font-size: 14.5px; color: #cbd5e1;">
+            <li style="display: flex; align-items: center; gap: 10px;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4ade80" stroke-width="3"
+                style="flex-shrink:0;">
+                <path d="M20 6L9 17l-5-5" />
+              </svg>
+              <strong>15 Days Free Trial</strong>
+            </li>
+            <li style="display: flex; align-items: center; gap: 10px;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4ade80" stroke-width="3"
+                style="flex-shrink:0;">
+                <path d="M20 6L9 17l-5-5" />
+              </svg>
+              All 5 Precision Drawing Tools
+            </li>
+            <li style="display: flex; align-items: center; gap: 10px;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4ade80" stroke-width="3"
+                style="flex-shrink:0;">
+                <path d="M20 6L9 17l-5-5" />
+              </svg>
+              Master Cost Library Included
+            </li>
+            <li style="display: flex; align-items: center; gap: 10px;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4ade80" stroke-width="3"
+                style="flex-shrink:0;">
+                <path d="M20 6L9 17l-5-5" />
+              </svg>
+              Supports <strong>2 Active Devices</strong>
+            </li>
+            <li style="display: flex; align-items: center; gap: 10px;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4ade80" stroke-width="3"
+                style="flex-shrink:0;">
+                <path d="M20 6L9 17l-5-5" />
+              </svg>
+              Up to 7 Days Offline Use
+            </li>
+          </ul>
+
+          <a href="https://tkoffpro.lemonsqueezy.com/checkout/buy/773c7039-4e89-4f3d-8a7e-d5adde7686e1?embed=1"
+            class="lemonsqueezy-button btn-primary"
+            style="display: block; width: 100%; box-sizing: border-box; text-align: center; padding: 14px; font-size: 15px; font-weight: 700; border-radius: 8px; text-transform: none; text-decoration: none;">
+            Start Free Trial Now
+          </a>
+          <p style="color: #64748b; font-size: 11px; margin-top: 12px; margin-bottom: 0;">Secured checkout by
+            LemonSqueezy</p>
+
+          <!-- How it works flow -->
+          <div
+            style="margin-top: 25px; border-top: 1px solid rgba(255,255,255,0.08); padding-top: 20px; text-align: left;">
+            <h4 style="font-size: 13px; color: white; margin-bottom: 12px; font-weight: 700;">How the Free Trial works:
+            </h4>
+            <ol
+              style="padding-left: 16px; margin: 0; font-size: 12px; color: #94a3b8; display: flex; flex-direction: column; gap: 8px; line-height: 1.4;">
+              <li>Click <strong>Start Free Trial</strong> and complete the secure $0 checkout.</li>
+              <li>Check your email inbox for your automated password and login credentials.</li>
+              <li>Download the app below, log in, and start estimating immediately!</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== DOWNLOAD CTA ========== -->
+  <section id="download">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label"><span class="line"></span> Download</div>
+        <h2 class="section-title">Ready to Work Like a Pro?</h2>
+        <p class="section-subtitle">Available for Windows and Mac. Install the app and log in with your subscription.
+        </p>
+      </div>
+      <div class="hero-buttons reveal" style="justify-content:center;">
+        <a href="#" class="btn-primary" style="padding:18px 36px;font-size:1.05rem;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M0 3.5l9.9-1.4v9.5H0zm11-1.6L24 0v11.5H11zM0 12.5h9.9v9.5L0 20.5zm11 0H24V24l-13-1.8z" />
+          </svg>
           Download for Windows
         </a>
-        <a href="#" class="btn-secondary">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+        <a href="#" class="btn-secondary" style="padding:18px 36px;font-size:1.05rem;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M18.7 19.4c-.7 1-1.4 2-2.6 2s-1.7-.7-3.2-.7-2 .7-3.2.7-1.7-.9-2.6-2C5.6 17.1 4 13.5 5.5 11c.8-1.4 2.2-2.3 3.8-2.3 1.3 0 2.1.7 3.2.7s1.6-.7 3.2-.7c1.3 0 2.5.7 3.3 1.8-2.9 1.6-2.4 5.6.5 6.7-.6 1.4-1 2-1.8 3.2zM15.8 3c.3 1.3-.3 2.6-1.1 3.5-.8 1-2.2 1.7-3.5 1.6-.3-1.2.4-2.5 1.2-3.4.8-1 2.3-1.7 3.4-1.7z" />
+          </svg>
           Download for Mac
         </a>
       </div>
-    </div>
-    
-    <div class="hero-visual perspective-container">
-      <div class="hero-glow"></div>
-      
-      <div class="sci-fi-wrapper">
-        <img src="hero-3d.png" alt="TkOff Pro — Main Interface" class="hero-mockup-img">
+      <div class="download-badge reveal">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#4ade80" stroke-width="3">
+          <path d="M20 6L9 17l-5-5" />
+        </svg>
+        Download Free Installer · 15-day Free Trial
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ========== FEATURES ========== -->
-<section id="features">
-  <div class="container">
-    <div class="section-header reveal">
-      <div class="section-label"><span class="line"></span> Features</div>
-      <h2 class="section-title">Everything You Need for Professional Takeoffs</h2>
-      <p class="section-subtitle">Powerful tools designed for architects, contractors, and estimators.</p>
+  <!-- ========== ABOUT ========== -->
+  <section id="about">
+    <div class="container reveal">
+      <img src="logo.png" alt="TkOff Pro" class="about-logo">
+      <div class="about-name">TkOff <span class="pro">Pro</span></div>
+      <p class="about-creator"><strong>Created by</strong> Gino El Arquitecto & Pro Ca-Sa</p>
+      <p class="about-mission">Professional takeoff and estimating software built by architects, for architects.
+        Designed to simplify the path from blueprint to budget with precision and speed.</p>
     </div>
-    <div class="features-grid">
-      <div class="feature-card reveal">
-        <div class="feature-icon">📄</div>
-        <h3>PDF Blueprint Viewer</h3>
-        <p>Open multi-page architectural plans with smooth zoom and instant page navigation.</p>
-      </div>
-      <div class="feature-card reveal">
-        <div class="feature-icon">📐</div>
-        <h3>5 Precision Measurement Tools</h3>
-        <p>Lines, polygons, paths, counting, and tape measure — draw directly on your blueprints.</p>
-      </div>
-      <div class="feature-card reveal">
-        <div class="feature-icon">📏</div>
-        <h3>Professional Scale System</h3>
-        <p>Architectural, engineering, and metric scales with manual calibration support.</p>
-      </div>
-      <div class="feature-card reveal">
-        <div class="feature-icon">🗂️</div>
-        <h3>Layer Management</h3>
-        <p>Organize measurements by layer with custom colors, opacity, wall height, and sub-layers.</p>
-      </div>
-      <div class="feature-card reveal">
-        <div class="feature-icon">💰</div>
-        <h3>Real-Time Estimating</h3>
-        <p>Live cost table with built-in math calculator in prices and automatic grand total.</p>
-      </div>
-      <div class="feature-card reveal">
-        <div class="feature-icon">📊</div>
-        <h3>Professional Excel Export</h3>
-        <p>Hierarchical report with currency formatting, subtotals, and Grand Total in one click.</p>
-      </div>
-    </div>
-  </div>
-</section>
+  </section>
 
-<!-- ========== MASTER LIBRARY ========== -->
-<section id="master-library" style="background: rgba(255,255,255,0.02); border-top: 1px solid rgba(255,255,255,0.05); border-bottom: 1px solid rgba(255,255,255,0.05);">
-  <div class="container" style="display: flex; align-items: center; gap: 60px; flex-wrap: wrap;">
-    <div style="flex: 1; min-width: 300px;" class="reveal">
-      <div class="section-label">
-        <div class="line"></div> Master Library
-      </div>
-      <h2 class="section-title">Your Standard Costs, Always Ready</h2>
-      <p class="section-subtitle" style="margin-bottom: 30px;">
-        Stop re-typing the same materials and labor rates over and over. The Master Library allows you to build a comprehensive database of your standard items to dramatically speed up your estimating process.
-      </p>
-      
-      <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 16px;">
-        <li style="display: flex; align-items: flex-start; gap: 12px;">
-          <div style="color: var(--orange); font-size: 1.2rem; background: rgba(253,108,0,0.1); width: 28px; height: 28px; border-radius: 50%; display: flex; justify-content: center; align-items: center; flex-shrink: 0;">✓</div>
-          <span style="color: #e0e0e0; line-height: 1.5;"><strong>Pre-configure Everything:</strong> Save item descriptions, units, and unit prices permanently.</span>
-        </li>
-        <li style="display: flex; align-items: flex-start; gap: 12px;">
-          <div style="color: var(--orange); font-size: 1.2rem; background: rgba(253,108,0,0.1); width: 28px; height: 28px; border-radius: 50%; display: flex; justify-content: center; align-items: center; flex-shrink: 0;">✓</div>
-          <span style="color: #e0e0e0; line-height: 1.5;"><strong>Export & Collaborate:</strong> Seamlessly share your custom library with coworkers or across multiple computers to keep your entire team on the same track.</span>
-        </li>
-        <li style="display: flex; align-items: flex-start; gap: 12px;">
-          <div style="color: var(--orange); font-size: 1.2rem; background: rgba(253,108,0,0.1); width: 28px; height: 28px; border-radius: 50%; display: flex; justify-content: center; align-items: center; flex-shrink: 0;">✓</div>
-          <span style="color: #e0e0e0; line-height: 1.5;"><strong>Zero Data Entry Errors:</strong> Streamline your workflow and ensure pricing consistency across all your bids.</span>
-        </li>
-      </ul>
-    </div>
-    
-    <div style="flex: 1.2; min-width: 400px; border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 30px 60px rgba(0,0,0,0.5), 0 0 30px rgba(0, 52, 111, 0.4);" class="reveal">
-      <img src="screenshot-library.png" alt="TkOff Pro Master Library" style="width: 100%; display: block; transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
-    </div>
-  </div>
-</section>
-
-<!-- ========== HOW IT WORKS ========== -->
-<section id="how-it-works">
-  <div class="container">
-    <div class="section-header reveal">
-      <div class="section-label"><span class="line"></span> How It Works</div>
-      <h2 class="section-title">From Blueprint to Budget in 3 Steps</h2>
-      <p class="section-subtitle">Simple, fast, and professional workflow.</p>
-    </div>
-    <div class="steps-row">
-      <div class="step reveal">
-        <div class="step-number">1</div>
-        <h3>Open Your PDF</h3>
-        <p>Import any architectural blueprint with multi-page support and instant rendering.</p>
-        <div class="step-connector"></div>
-      </div>
-      <div class="step reveal">
-        <div class="step-number">2</div>
-        <h3>Measure with Precision</h3>
-        <p>Draw areas, lines, paths, and counts directly on the plan with professional scales.</p>
-        <div class="step-connector"></div>
-      </div>
-      <div class="step reveal">
-        <div class="step-number">3</div>
-        <h3>Export Your Estimate</h3>
-        <p>Generate a professional Excel report with costs, subtotals, and Grand Total in one click.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ========== TOOLS SHOWCASE ========== -->
-<section id="tools">
-  <div class="container">
-    <div class="section-header reveal">
-      <div class="section-label"><span class="line"></span> Tools</div>
-      <h2 class="section-title">Keyboard-First Workflow</h2>
-      <p class="section-subtitle">Every tool at your fingertips with a single keystroke.</p>
-    </div>
-    <div class="tools-row reveal">
-      <div class="tool-chip"><span class="tool-icon">🔘</span><span class="tool-name">Select</span><kbd>Q</kbd></div>
-      <div class="tool-chip"><span class="tool-icon">✏️</span><span class="tool-name">Line</span><kbd>L</kbd></div>
-      <div class="tool-chip"><span class="tool-icon">🔗</span><span class="tool-name">Path</span><kbd>P</kbd></div>
-      <div class="tool-chip"><span class="tool-icon">⬡</span><span class="tool-name">Area</span><kbd>A</kbd></div>
-      <div class="tool-chip"><span class="tool-icon">🔢</span><span class="tool-name">Count</span><kbd>C</kbd></div>
-      <div class="tool-chip"><span class="tool-icon">📐</span><span class="tool-name">Scale</span><kbd>S</kbd></div>
-      <div class="tool-chip"><span class="tool-icon">📏</span><span class="tool-name">Tape</span><kbd>T</kbd></div>
-    </div>
-  </div>
-</section>
-
-<!-- ========== ESTIMATING ========== -->
-<section id="estimating">
-  <div class="container">
-    <div class="estimating-wrap reveal">
-      <div class="estimating-text">
-        <div class="section-label"><span class="line"></span> Estimating</div>
-        <h3>From Measurement to<br>Budget in Seconds</h3>
-        <p>The built-in Estimating module groups all your measurements by page and layer, lets you assign unit prices with a math calculator, and shows a live Grand Total — ready to export.</p>
-        <a href="#download" class="btn-primary" style="margin-top:8px;">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
-          Try It Free
-        </a>
-      </div>
-      <div class="estimating-table-wrap">
-        <table class="est-table">
-          <thead>
-            <tr>
-              <th>Description</th>
-              <th>Wall Ht</th>
-              <th>Qty</th>
-              <th>Unit</th>
-              <th>Unit Price</th>
-              <th>Total Cost</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr class="page-row"><td colspan="6">📄 A1.01 — First Floor Plan</td></tr>
-            <tr><td>Exterior Walls</td><td>10'</td><td>245.6</td><td>LF</td><td>$12.50</td><td>$3,070.00</td></tr>
-            <tr class="sub-row"><td>└ Insulation R-19</td><td>—</td><td>2,456</td><td>SF</td><td>$1.80</td><td>$4,420.80</td></tr>
-            <tr><td>Floor Area - Main</td><td>—</td><td>1,850</td><td>SF</td><td>$6.75</td><td>$12,487.50</td></tr>
-            <tr><td>Doors</td><td>—</td><td>14</td><td>EA</td><td>$385.00</td><td>$5,390.00</td></tr>
-            <tr class="page-row"><td colspan="6">📄 A2.01 — Second Floor Plan</td></tr>
-            <tr><td>Interior Partitions</td><td>8'</td><td>186.2</td><td>LF</td><td>$8.25</td><td>$1,536.15</td></tr>
-            <tr><td>Ceiling Area</td><td>—</td><td>1,420</td><td>SF</td><td>$3.50</td><td>$4,970.00</td></tr>
-            <tr class="grand-row"><td colspan="5">Grand Total</td><td>$31,874.45</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ========== PRICING ========== -->
-<section id="pricing" style="background: radial-gradient(circle at bottom, rgba(0,52,111,0.08) 0%, rgba(15,23,42,0) 70%); border-top: 1px solid rgba(255,255,255,0.05); padding: 80px 0;">
-  <div class="container">
-    <div class="section-header reveal">
-      <div class="section-label"><span class="line"></span> Pricing</div>
-      <h2 class="section-title">Simple, Transparent Pricing</h2>
-      <p class="section-subtitle">Start your 15-day free trial today. Cancel anytime.</p>
-    </div>
-    
-    <div style="display: flex; justify-content: center; margin-top: 40px;" class="reveal">
-      <div style="background: rgba(30, 41, 59, 0.5); backdrop-filter: blur(10px); border: 1.5px solid #fd6c00; border-radius: 20px; padding: 40px; width: 100%; max-width: 420px; box-shadow: 0 20px 50px rgba(0,0,0,0.3), 0 0 30px rgba(253,108,0,0.15); position: relative; text-align: center;">
-        <div style="position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background: var(--orange); color: white; padding: 6px 16px; border-radius: 20px; font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; box-shadow: 0 4px 10px rgba(253,108,0,0.4);">
-          15-Day Free Trial
+  <!-- ========== FOOTER ========== -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="logo.png" alt="TkOff Pro">
+          <span>TkOff <span class="pro" style="color:var(--orange)">Pro</span></span>
         </div>
-        
-        <h3 style="font-family: 'Outfit', sans-serif; font-size: 24px; font-weight: 700; margin: 10px 0 0 0; color: white;">Monthly Plan</h3>
-        <p style="color: #94a3b8; font-size: 14px; margin: 5px 0 25px 0;">Full access, no restrictions</p>
-        
-        <div style="display: flex; align-items: baseline; justify-content: center; gap: 4px; margin-bottom: 25px;">
-          <span style="font-family: 'Outfit', sans-serif; font-size: 56px; font-weight: 800; color: white; line-height: 1;">$20</span>
-          <span style="color: #94a3b8; font-size: 16px; font-weight: 500;">/ month</span>
+        <div class="footer-links">
+          <a href="#features">Features</a>
+          <a href="#how-it-works">How It Works</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#download">Download</a>
         </div>
-        
-        <ul style="list-style: none; padding: 0; margin: 0 0 35px 0; text-align: left; display: flex; flex-direction: column; gap: 14px; font-size: 14.5px; color: #cbd5e1;">
-          <li style="display: flex; align-items: center; gap: 10px;">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4ade80" stroke-width="3" style="flex-shrink:0;"><path d="M20 6L9 17l-5-5"/></svg>
-            <strong>15 Days Free Trial</strong>
-          </li>
-          <li style="display: flex; align-items: center; gap: 10px;">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4ade80" stroke-width="3" style="flex-shrink:0;"><path d="M20 6L9 17l-5-5"/></svg>
-            All 5 Precision Drawing Tools
-          </li>
-          <li style="display: flex; align-items: center; gap: 10px;">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4ade80" stroke-width="3" style="flex-shrink:0;"><path d="M20 6L9 17l-5-5"/></svg>
-            Master Cost Library Included
-          </li>
-          <li style="display: flex; align-items: center; gap: 10px;">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4ade80" stroke-width="3" style="flex-shrink:0;"><path d="M20 6L9 17l-5-5"/></svg>
-            Supports <strong>2 Active Devices</strong>
-          </li>
-          <li style="display: flex; align-items: center; gap: 10px;">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4ade80" stroke-width="3" style="flex-shrink:0;"><path d="M20 6L9 17l-5-5"/></svg>
-            Up to 7 Days Offline Use
-          </li>
-        </ul>
-        
-        <a href="https://tkoffpro.lemonsqueezy.com/checkout/buy/YOUR_VARIANT_ID?embed=1" class="lemonsqueezy-button btn-primary" style="display: block; width: 100%; box-sizing: border-box; text-align: center; padding: 14px; font-size: 15px; font-weight: 700; border-radius: 8px; text-transform: none; text-decoration: none;">
-          Start Free Trial Now
-        </a>
-        <p style="color: #64748b; font-size: 11px; margin-top: 12px; margin-bottom: 0;">Secured checkout by LemonSqueezy</p>
-
-        <!-- How it works flow -->
-        <div style="margin-top: 25px; border-top: 1px solid rgba(255,255,255,0.08); padding-top: 20px; text-align: left;">
-          <h4 style="font-size: 13px; color: white; margin-bottom: 12px; font-weight: 700;">How the Free Trial works:</h4>
-          <ol style="padding-left: 16px; margin: 0; font-size: 12px; color: #94a3b8; display: flex; flex-direction: column; gap: 8px; line-height: 1.4;">
-            <li>Click <strong>Start Free Trial</strong> and complete the secure $0 checkout.</li>
-            <li>Check your email inbox for your automated password and login credentials.</li>
-            <li>Download the app below, log in, and start estimating immediately!</li>
-          </ol>
-        </div>
+        <div class="footer-copy">© 2025 TkOff Pro · Gino El Arquitecto & Pro Ca-Sa · v1.3.0</div>
       </div>
     </div>
-  </div>
-</section>
+  </footer>
 
-<!-- ========== DOWNLOAD CTA ========== -->
-<section id="download">
-  <div class="container">
-    <div class="section-header reveal">
-      <div class="section-label"><span class="line"></span> Download</div>
-      <h2 class="section-title">Ready to Work Like a Pro?</h2>
-      <p class="section-subtitle">Available for Windows and Mac. Install the app and log in with your subscription.</p>
-    </div>
-    <div class="hero-buttons reveal" style="justify-content:center;">
-      <a href="#" class="btn-primary" style="padding:18px 36px;font-size:1.05rem;">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M0 3.5l9.9-1.4v9.5H0zm11-1.6L24 0v11.5H11zM0 12.5h9.9v9.5L0 20.5zm11 0H24V24l-13-1.8z"/></svg>
-        Download for Windows
-      </a>
-      <a href="#" class="btn-secondary" style="padding:18px 36px;font-size:1.05rem;">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M18.7 19.4c-.7 1-1.4 2-2.6 2s-1.7-.7-3.2-.7-2 .7-3.2.7-1.7-.9-2.6-2C5.6 17.1 4 13.5 5.5 11c.8-1.4 2.2-2.3 3.8-2.3 1.3 0 2.1.7 3.2.7s1.6-.7 3.2-.7c1.3 0 2.5.7 3.3 1.8-2.9 1.6-2.4 5.6.5 6.7-.6 1.4-1 2-1.8 3.2zM15.8 3c.3 1.3-.3 2.6-1.1 3.5-.8 1-2.2 1.7-3.5 1.6-.3-1.2.4-2.5 1.2-3.4.8-1 2.3-1.7 3.4-1.7z"/></svg>
-        Download for Mac
-      </a>
-    </div>
-    <div class="download-badge reveal">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#4ade80" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg>
-      Download Free Installer · 15-day Free Trial
-    </div>
-  </div>
-</section>
-
-<!-- ========== ABOUT ========== -->
-<section id="about">
-  <div class="container reveal">
-    <img src="logo.png" alt="TkOff Pro" class="about-logo">
-    <div class="about-name">TkOff <span class="pro">Pro</span></div>
-    <p class="about-creator"><strong>Created by</strong> Gino El Arquitecto & Pro Ca-Sa</p>
-    <p class="about-mission">Professional takeoff and estimating software built by architects, for architects. Designed to simplify the path from blueprint to budget with precision and speed.</p>
-  </div>
-</section>
-
-<!-- ========== FOOTER ========== -->
-<footer>
-  <div class="container">
-    <div class="footer-content">
-      <div class="footer-logo">
-        <img src="logo.png" alt="TkOff Pro">
-        <span>TkOff <span class="pro" style="color:var(--orange)">Pro</span></span>
-      </div>
-      <div class="footer-links">
-        <a href="#features">Features</a>
-        <a href="#how-it-works">How It Works</a>
-        <a href="#pricing">Pricing</a>
-        <a href="#download">Download</a>
-      </div>
-      <div class="footer-copy">© 2025 TkOff Pro · Gino El Arquitecto & Pro Ca-Sa · v1.3.0</div>
-    </div>
-  </div>
-</footer>
-
-<script src="https://assets.lemonsqueezy.com/lemon.js" defer></script>
-<script src="script.js"></script>
+  <script src="https://assets.lemonsqueezy.com/lemon.js" defer></script>
+  <script src="script.js"></script>
 </body>
+
 </html>
