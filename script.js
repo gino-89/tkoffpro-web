@@ -116,3 +116,11 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     }
   });
 });
+
+// ---------- Initialize LemonSqueezy Overlay ----------
+window.addEventListener('load', () => {
+  if (window.createLemonSqueezy) {
+    window.createLemonSqueezy();
+  }
+});
+
