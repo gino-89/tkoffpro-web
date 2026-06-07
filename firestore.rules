@@ -1,0 +1,21 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // Reglas de seguridad para la colección principal 'usuarios'
+    match /usuarios/{userId} {
+      // 1. Permite leer la licencia solo si el usuario inició sesión y el UID coincide con su cuenta.
+      // 2. Bloquea escrituras (crear, actualizar, borrar) desde la app. Solo el webhook de LemonSqueezy (servidor) puede modificarlas.
+      allow read: if request.auth != null && request.auth.uid == userId;
+      allow write: if false;
+      
+      // Reglas para la subcolección de 'dispositivos' activos del usuario
+      match /dispositivos/{deviceId} {
+        // Permite registrar o desvincular dispositivos solo para el usuario propietario de la cuenta.
+        allow read, write: if request.auth != null && request.auth.uid == userId;
+      }
+    }
+    
+  }
+}
